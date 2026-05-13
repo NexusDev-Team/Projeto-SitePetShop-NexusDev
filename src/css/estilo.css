@@ -74,6 +74,108 @@ header nav ul li a:hover{
     -webkit-text-fill-color:transparent;
     background-clip:text;
 }
+/* CONTAINER */
+#container{
+    padding: 20px 8%;
+}
+
+
+/* GRID DOS CARDS */
+.card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+    gap: 100px;
+    justify-content: center;
+}
+
+/* CARD */
+.produto-card{
+    background: var(--preto);
+    border: 2px solid var(--champagne);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: 0.3s ease;
+}
+
+.produto-card:hover{
+    transform: translateY(-10px);
+    border-color: var(--dourado);
+    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.25);
+}
+
+/* IMAGEM */
+.produto-card img{
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background: var(--champagne);
+    border-radius: 10px;
+}
+
+/* CONTEÚDO */
+.card-content{
+    padding: 20px 0 0;
+    color: var(--champagne);
+}
+
+/* NOME DO PRODUTO */
+.card-content h3{
+    min-height: 90px;
+    font-size: 1.1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* PREÇO */
+.preco-antigo {
+    font-size:1rem;
+    color: var(--dourado);
+    margin-bottom: 8px;
+    font-family:Montserrat, sans-serif;
+}
+.preco-antigo span{
+    padding:5px;
+    font-size:0.8rem;
+    text-decoration:line-through;
+    text-decoration-color: var(--champagne);
+}
+
+.preco {
+    font-size: 1.2rem;
+    color: var(--champagne);
+    margin: 15px 0;
+}
+.preco span{
+    padding:5px;
+    font-size:1.2rem;
+    color: var(--champagne);
+}
+/* BOTÃO */
+.btn-comprar{
+    background: var(--dourado);
+    color: var(--preto);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.btn-comprar:hover{
+    background: var(--champagne);
+    color: var(--dourado);
+    transform: scale(1.05);
+}
 
 #imgfundo{
     position: fixed;
