@@ -1,0 +1,167 @@
+:root{
+    --preto: #080808;
+    --dourado: #D4AF37;
+    --champagne: #F5E6CA;
+    --branco: #FAFAF7;
+    --fontFamily: "Montserrat", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--preto);
+    font-family: var(--fontFamily);
+}
+
+#inicio{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:var(--preto);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    opacity:1;
+    transition: opacity 1s ease-in-out;
+}
+/* TÍTULO */
+#texto{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: var(--champagne);
+}
+
+#texto span{
+    color: var(--dourado);
+}
+header{
+    background:var(--preto);
+    color:var(--dourado);
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow: 0 5px 5px var(--dourado);
+    border-radius: 0px;
+}
+header #logo{
+    width:70px;
+    height:70px;
+    border-radius:0px;
+    background: transparent;
+}
+header nav ul{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+header nav ul li a{
+    text-decoration:none;
+    color:var(--champagne);
+    font-weight:800;
+}
+header nav ul li a:hover{
+    color:var(--dourado);
+}
+#imgfundo{
+    position: fixed;
+
+    bottom: -180px;
+    right: 175px;
+
+    width: 600px;
+
+    opacity: 0.15;
+
+    filter: blur(1px);
+
+    z-index: -1;
+
+    pointer-events:none;
+}
+.contato-container h1{
+    margin: 80px;
+    font-size: 4rem;
+    text-align: center;
+    color: var(--dourado);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+/* FORMULARIO */
+form{
+    width: 90%;
+    max-width: 500px;
+    margin: 100px auto;
+}
+/* CAIXA */
+fieldset{
+    border: 2px solid var(--dourado);
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: var(--preto);
+
+}
+/* TEXTO DO CONTATO */
+form p{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-weight: 600;
+    color: var(--champagne)
+}
+/* INPUTS */
+input{
+    padding: 10px;
+    border: 2px solid var(--champagne);
+    border-radius: 10px;
+    background: var(--preto);
+    color: var(--champagne);
+    
+}
+/* HOVER */
+input:focus{
+    border-color: var(--dourado);
+    box-shadow: 0 0 10px rgba(212,175,55,0.3);
+}
+/* BOTÃO */
+input[type="submit"]{
+    background: var(--dourado);
+    color: var(--preto);
+    text-transform: uppercase;
+    cursor:pointer;
+    border:none;
+}
+/* HOVER BOTÃO */
+input[type="submit"]:hover{
+    background: var(--champagne);
+    color: var(--dourado);
+    transform: scale(1.05);
+}
+
+/* ESPAÇO DO FOOTER */
+footer {
+    width: 100%;
+    background: var(--preto);
+    border-top: 2px solid var(--dourado);
+    padding: 15px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+}
+/* TEXTO DO FOOTER */
+footer p{
+    color: var(--champagne);
+    font-size: 1rem;
+}
