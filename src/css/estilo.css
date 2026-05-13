@@ -176,7 +176,6 @@ header nav ul li a:hover{
     color: var(--dourado);
     transform: scale(1.05);
 }
-
 #imgfundo{
     position: fixed;
 
@@ -192,4 +191,17 @@ header nav ul li a:hover{
     z-index: -1;
 
     pointer-events:none;
+}
+footer {
+    width: 100%;
+    background: var(--preto);
+    border-top: 2px solid var(--dourado);
+    padding: 15px;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+}
+footer p{
+    color: var(--champagne);
+    font-size: 1rem;
 }
