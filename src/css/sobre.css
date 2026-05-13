@@ -98,7 +98,10 @@ header nav ul li a:hover{
     text-transform: uppercase;
 }
 .sobre-container p{
-    padding: 0px 500px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+
     color: var(--champagne);
     font-size: 1.7rem;
     line-height: 2;
