@@ -107,7 +107,9 @@ header nav ul li a:hover{
     pointer-events:none;
 }
 .contato-container h1{
-    margin: 80px;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
     font-size: 4rem;
     text-align: center;
     color: var(--dourado);
