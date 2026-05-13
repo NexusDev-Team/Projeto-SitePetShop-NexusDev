@@ -43,7 +43,6 @@ body{
 #texto span{
     color: var(--dourado);
 }
-
 /*Menu Hamburguer*/
 
 .menu-hamburguer{
@@ -61,7 +60,6 @@ body{
     background:var(--dourado);
     border-radius:10px;
 }
-
 header{
     background:var(--preto);
     color:var(--dourado);
